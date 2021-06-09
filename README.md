@@ -10,20 +10,18 @@ It will output random bad joke
 
 You should have python 3.8.5 or later installed
 
-clone project to your computer
+clone project from github to your computer
 
 execute python script in terminal: py src/randomJoke.py
 
-**Execute project in Docker container**
+**Execute project in docker container using local dockerfile**
 
-Pull Dockerfile
+You don't need to install python to your local computer
 
-docker pull 11122018/bad-jokes:latest
+Build docker file:  docker build . -t bad-jokes
 
-Build docker file. 
+**Execute project from DockerHub in docker container without having source codes**
 
-docker build . -t 11122018/bad-jokes
+You don't need to install python to your local computer
 
-**Execute python script**
-
-docker run -it 11122018/bad-jokes
+Just give following command in terminal: docker run -it 11122018/bad-jokes
